@@ -19,10 +19,10 @@ jobs:
       - name: Download verified Khidthun APK
         run: |
           mkdir -p khidthun/releases
-          curl --fail --location --retry 3 --output /tmp/khidthun.zip 'https://sdmntprindiasocentral.oaiusercontent.com/files/00000000-7eb8-8211-a83b-32c384b64651/raw?se=2026-08-31T02%3A47%3A10Z&sp=r&sv=2026-02-06&sr=b&scid=35cbec10-a24a-5eb1-9e58-adc214bb0d35&skoid=cb94e22a-e3df-4e6a-9e17-1696f40fa435&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-08-31T01%3A32%3A26Z&ske=2026-09-01T01%3A32%3A26Z&sks=b&skv=2026-02-06&sig=vQeByIsdhz4Mm9M22B6HjTfYnt4%2FzX%2BwJAnoHHPijtI%3D'
+          curl --fail --location --retry 3 --output /tmp/khidthun.zip 'https://sdmntprnznorth.oaiusercontent.com/files/00000000-a3a0-820b-96f9-e6fa4a7ab463/raw?se=2026-08-31T02%3A51%3A53Z&sp=r&sv=2026-02-06&sr=b&scid=677f1632-f16f-5cb8-9684-05815cc3a20f&skoid=cb94e22a-e3df-4e6a-9e17-1696f40fa435&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-08-30T18%3A54%3A22Z&ske=2026-08-31T18%3A54%3A22Z&sks=b&skv=2026-02-06&sig=BdfxYDiV3YvQ92mpX6XhNMGbNqPetAfnY3RCotQZwyE%3D'
           unzip -j /tmp/khidthun.zip app-debug.apk -d /tmp
-          echo '54484b22747548bb50feea5ce45a55d1ca775a2152ea78478cf29ff89cbc6fcd  /tmp/app-debug.apk' | sha256sum -c -
-          cp /tmp/app-debug.apk khidthun/releases/khidthun-1.0.3-beta.apk
+          echo '0935b3d3af98045780d41402490aa0cf86702dd9dc788e6891cc44d1f75c360d  /tmp/app-debug.apk' | sha256sum -c -
+          cp /tmp/app-debug.apk khidthun/releases/khidthun-1.0.4-beta.apk
           cp /tmp/app-debug.apk khidthun/latest.apk
 
       - name: Publish update manifest
@@ -31,19 +31,19 @@ jobs:
           {
             "appId": "khidthun",
             "channel": "staging",
-            "versionCode": 4,
-            "versionName": "1.0.3-beta",
-            "latestVersionCode": 4,
-            "latestVersionName": "1.0.3-beta",
+            "versionCode": 5,
+            "versionName": "1.0.4-beta",
+            "latestVersionCode": 5,
+            "latestVersionName": "1.0.4-beta",
             "minSupportedVersionCode": 1,
             "minimumSupportedVersionCode": 1,
             "mandatory": false,
             "forceUpdate": false,
             "force": false,
-            "downloadUrl": "https://raw.githubusercontent.com/gananajak-lgtm/gananajak-app-updates/main/khidthun/releases/khidthun-1.0.3-beta.apk",
-            "releaseNotes": "อัปเดตโลโก้แอป และเปลี่ยนการออกจากแอปเป็นกด Back 2 ครั้ง",
-            "message": "คิดทุน 1.0.3-beta พร้อมอัปเดต",
-            "sha256": "54484b22747548bb50feea5ce45a55d1ca775a2152ea78478cf29ff89cbc6fcd"
+            "downloadUrl": "https://raw.githubusercontent.com/gananajak-lgtm/gananajak-app-updates/main/khidthun/releases/khidthun-1.0.4-beta.apk",
+            "releaseNotes": "ย้ายช่องทางอัปเดตออกจาก Cloudflare ไปยัง GitHub Public Update Channel พร้อมโลโก้และกด Back 2 ครั้งเพื่อออก",
+            "message": "คิดทุน 1.0.4-beta พร้อมใช้งานช่องอัปเดตใหม่",
+            "sha256": "0935b3d3af98045780d41402490aa0cf86702dd9dc788e6891cc44d1f75c360d"
           }
           JSON
 
@@ -51,7 +51,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add khidthun/app-update.json khidthun/latest.apk khidthun/releases/khidthun-1.0.3-beta.apk
+          git add khidthun/app-update.json khidthun/latest.apk khidthun/releases/khidthun-1.0.4-beta.apk
           git diff --cached --quiet && exit 0
-          git commit -m 'release(khidthun): publish 1.0.3-beta APK'
+          git commit -m 'release(khidthun): publish 1.0.4-beta APK'
           git push
