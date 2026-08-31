@@ -1,17 +1,17 @@
 {
   "appId": "khidthun",
   "channel": "staging",
-  "versionCode": 15,
-  "versionName": "1.0.14-beta",
-  "latestVersionCode": 15,
-  "latestVersionName": "1.0.14-beta",
-  "minSupportedVersionCode": 14,
-  "minimumSupportedVersionCode": 14,
+  "versionCode": 16,
+  "versionName": "1.0.15-beta",
+  "latestVersionCode": 16,
+  "latestVersionName": "1.0.15-beta",
+  "minSupportedVersionCode": 15,
+  "minimumSupportedVersionCode": 15,
   "mandatory": false,
   "forceUpdate": false,
   "force": false,
-  "downloadUrl": "https://raw.githubusercontent.com/gananajak-lgtm/gananajak-app-updates/main/khidthun/releases/khidthun-1.0.14-beta.apk",
-  "releaseNotes": "ทดสอบอัปเดตทับจาก Khidthun 1.0.13-beta ไป 1.0.14-beta ด้วย package และ durable staging signing identity เดิม พร้อม safe-area/status-bar fix",
-  "message": "คิดทุน 1.0.14-beta พร้อมอัปเดตทดสอบการติดตั้งทับ โดยไม่ต้องลบแอป",
-  "sha256": "c28f2af0554eb86ece6d5c31a58d1e150f14ee2e96d92240981613300ebbdf1b"
+  "downloadUrl": "https://raw.githubusercontent.com/gananajak-lgtm/gananajak-app-updates/main/khidthun/releases/khidthun-1.0.15-beta.apk",
+  "releaseNotes": "ทดสอบอัปเดตทับจาก Fixed Signer 1.0.14-beta ไป 1.0.15-beta ด้วย durable staging signing identity เดียวกัน โดยไม่ต้องลบแอป",
+  "message": "คิดทุน 1.0.15-beta พร้อมอัปเดตทับจาก Fixed 1.0.14 โดยไม่ต้องลบแอป",
+  "sha256": "bcf42eded4fa428bee8f1dd231538fbf9b8c54e799ba9ce282e191be3d97002e"
 }
