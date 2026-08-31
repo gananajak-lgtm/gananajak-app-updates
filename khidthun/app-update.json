@@ -1,17 +1,17 @@
 {
   "appId": "khidthun",
   "channel": "staging",
-  "versionCode": 5,
-  "versionName": "1.0.4-beta",
-  "latestVersionCode": 5,
-  "latestVersionName": "1.0.4-beta",
+  "versionCode": 6,
+  "versionName": "1.0.5-beta",
+  "latestVersionCode": 6,
+  "latestVersionName": "1.0.5-beta",
   "minSupportedVersionCode": 1,
   "minimumSupportedVersionCode": 1,
   "mandatory": false,
   "forceUpdate": false,
   "force": false,
-  "downloadUrl": "https://raw.githubusercontent.com/gananajak-lgtm/gananajak-app-updates/main/khidthun/releases/khidthun-1.0.4-beta.apk",
-  "releaseNotes": "ย้ายช่องทางอัปเดตออกจาก Cloudflare ไปยัง GitHub Public Update Channel พร้อมโลโก้และกด Back 2 ครั้งเพื่อออก",
-  "message": "คิดทุน 1.0.4-beta พร้อมใช้งานช่องอัปเดตใหม่",
-  "sha256": "0935b3d3af98045780d41402490aa0cf86702dd9dc788e6891cc44d1f75c360d"
+  "downloadUrl": "https://raw.githubusercontent.com/gananajak-lgtm/gananajak-app-updates/main/khidthun/releases/khidthun-1.0.5-beta.apk",
+  "releaseNotes": "อัปเดตโลโก้คิดทุนเป็นโทนน้ำเงินแวววาว และคงระบบกด Back 2 ครั้งเพื่อออก",
+  "message": "คิดทุน 1.0.5-beta พร้อมอัปเดตโลโก้ใหม่",
+  "sha256": "2b9f9b804da26be6c44feeb2c50ca0c47b61ea3656c6bacead86caa8b725649a"
 }
