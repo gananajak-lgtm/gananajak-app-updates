@@ -1,17 +1,17 @@
 {
   "appId": "khidthun",
   "channel": "staging",
-  "versionCode": 8,
-  "versionName": "1.0.7-beta",
-  "latestVersionCode": 8,
-  "latestVersionName": "1.0.7-beta",
-  "minSupportedVersionCode": 1,
-  "minimumSupportedVersionCode": 1,
+  "versionCode": 10,
+  "versionName": "1.0.9-beta",
+  "latestVersionCode": 10,
+  "latestVersionName": "1.0.9-beta",
+  "minSupportedVersionCode": 9,
+  "minimumSupportedVersionCode": 9,
   "mandatory": false,
   "forceUpdate": false,
   "force": false,
-  "downloadUrl": "https://raw.githubusercontent.com/gananajak-lgtm/gananajak-app-updates/main/khidthun/releases/khidthun-1.0.7-beta.apk",
-  "releaseNotes": "อัปเดตโลโก้คิดทุนเป็นสีน้ำเงินแวววาวแบบใหม่ และคงระบบ Stable Signing สำหรับการอัปเดตทับ",
-  "message": "คิดทุน 1.0.7-beta พร้อมอัปเดตโลโก้ใหม่",
-  "sha256": "71724e6f22343975ec147afd4086df0069e51f11ba2f806b3556d497d5f0b8a1"
+  "downloadUrl": "https://raw.githubusercontent.com/gananajak-lgtm/gananajak-app-updates/main/khidthun/releases/khidthun-1.0.9-beta.apk",
+  "releaseNotes": "ทดสอบอัปเดตทับจาก Clean Staging Baseline 1.0.8-beta โดยใช้ package และ Stable Signing เดิม",
+  "message": "คิดทุน 1.0.9-beta พร้อมอัปเดตทดสอบการติดตั้งทับ",
+  "sha256": "a79ab9eddb8a66f8ce84e630a79506a79598a1204a581b0b70f6730f18574e68"
 }
